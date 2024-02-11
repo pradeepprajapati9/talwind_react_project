@@ -1,0 +1,94 @@
+what is react ?
+------------------------------------------------------------------------------------
+ react js ek library hai jiska use single page application bnane ke liye use kiya jata hai jo ek user interface ko develop krta hai iski jayda demand q hai qki ye ab 
+backend me use hone lga hai jo data ko crud operation perform krane me madad kerta hai...
+------------------------------------------------------------------------------------
+
+what is props ?
+------------------------------------------------------------------------------------
+props ko hum property bhi bol skte hai prps ka use ek component se dusre component
+me data ko transfer ke liye use kiya jata hai props ek js ka fucntion hai jise read 
+kr skte hai
+------------------------------------------------------------------------------------
+
+what is state ?
+-----------------------------------------------------------------------------------
+javascript me jaise hum string number object ko asani se change kr dete the use ab react me change ya update nhi kr skte react me jo state hai wah ek object data container hai chahe wo string number array kuch bhi ho skta hai unhi cheejo ko update aur change krne ke liye hme state ki jarujat padti hai..
+-----------------------------------------------------------------------------------
+
+what is hooks ?
+------------------------------------------------------------------------------------
+aur inhi data ko update aur change krne ke hmare pass bhut sare state hote hai jinhe hum hooks ke name se bhi jante hai
+
+hooks react me ek lifecycle feature hai ye ek aishi techniqe hai jiska use hum data
+ko smart tarke se ya easy ya fir short tarike se kr skte hai 
+------------------------------------------------------------------------------------
+
+rule of hooks how to write hooks in react js and used  ?
+
+1)hooks hamesha function ke andar use kiya jata hai
+2)must be import in component
+3)mus be call at top level of component
+4)ye kahi condiftional nhi ho skta hai 
+
+
+hooks-------------------------
+1)useState() of syntex
+const[count,Setcount]=useState(initialize);
+useState ye sirf 1 value accept karta hai  2 return krta hai
+
+count=>
+it is used only variable this is current value 
+
+Setcount=>
+it is a function which is provide useState and it is use to update the state
+
+init=>
+it is used to initialize the value ye number string object array me ho skta hai
+
+----------------------------
+React Fiber Architecture
+devui---
+----------------------------
+
+
+what is useCallback ?
+--------------------------------------------------------------------------
+useCallback is a part of hooks which is used to ui increase ui performs
+and it is return memorize function
+--------------------------------------------------------------------------
+syntex--
+import { useCallback } from 'react';
+
+export default function ProductPage({ productId, referrer, theme }) {
+  const handleSubmit = useCallback((orderDetails) => {
+    post('/product/' + productId + '/buy', {
+      referrer,
+      orderDetails,
+    });
+  }, [productId, referrer]);
+}
+
+what is useMemo ?
+---------------------------------------------------------------------------
+useMemo is a part of hooks which is used to ui increase ui performs
+and it is return memorize values
+---------------------------------------------------------------------------
+
+what is useEffect ?
+----------------------------------------------------------------------------
+The useEffect Hook allows you to perform side effects in your components.
+Some examples of side effects are: fetching data, directly updating the DOM,
+and timers.
+----------------------------------------------------------------------------
+
+syntex---
+  useEffect(() => {
+        passwordGenrator()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [length, nummberA, charactorA, SetPassword])
+
+
+
+
+

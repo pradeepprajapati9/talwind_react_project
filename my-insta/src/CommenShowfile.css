@@ -1,0 +1,12 @@
+.commenpage{
+    display:flex;
+    flex-direction:row;
+}
+
+.commenpage_nav{
+    flex:0.2;
+}
+.commenpage_timeline{
+    flex:0.8;
+}
+ 

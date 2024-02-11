@@ -1,0 +1,25 @@
+.login{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:10px;
+    gap:10px;
+}
+.control{
+    padding:10px;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    background:grey;
+    color:white;
+    font-weight:bold;
+}
+::placeholder{
+    color:white;
+}
+ .btn{
+    padding:8px;
+    cursor:pointer;
+ }
+ 
+ 
